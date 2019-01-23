@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import API from "../utils/API";
+// import API from "../utils/API";
 import Card from "../components/Card";
-import Alert from "../components/Alert";
+// import Alert from "../components/Alert";
 
 class Discover extends Component {
   state = {
@@ -39,15 +39,15 @@ class Discover extends Component {
     this.loadNextUser();
   };
 
-  loadNextUser = () => {
-    API.getRandomUser()
-      .then(res =>
-        this.setState({
-          image: res.data.message
-        })
-      )
-      .catch(err => console.log(err));
-  };
+  // loadNextUser = () => {
+  //   API.getRandomUser()
+  //     .then(res =>
+  //       this.setState({
+  //         image: res.data.message
+  //       })
+  //     )
+  //     .catch(err => console.log(err));
+  // };
 
   render() {
     return (
@@ -60,9 +60,9 @@ class Discover extends Component {
         <h1 className="text-center">
           You've matched with {this.state.matchCount} people so far!
         </h1>
-        <Alert style={{ opacity: this.state.match ? 1 : 0 }} type="success">
+        {/* <Alert style={{ opacity: this.state.match ? 1 : 0 }} type="success">
          Got a Match!
-        </Alert>
+        </Alert> */}
       </div>
     );
   }
