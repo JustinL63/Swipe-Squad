@@ -1,10 +1,17 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 
-function CardBtn(props) {
-  return (
-    <button onClick={props.onClick} className={`card-btn ${props["data-value"]}`} {...props} />
-  );
-}
+function Profile(props) {
+    return (
+      <div
+        className="card"
+        style={{
+          backgroundImage: props.image ? `url(${props.image})` : "none"
+        }}
+        >
+  
+      </div>
+    );
+  }
 
-export default CardBtn;
+export default Profile;
