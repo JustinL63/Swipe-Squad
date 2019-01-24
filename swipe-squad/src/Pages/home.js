@@ -1,5 +1,5 @@
 import React from "react";
-import Proflie from "..components/Proflie";
+import Profile from "..components/Profile";
 
 
 function Home () {

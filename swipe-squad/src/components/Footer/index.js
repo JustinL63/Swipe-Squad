@@ -4,7 +4,7 @@ import "./style.css";
 function Footer() {
   return (
     <footer className="footer">
-      <span>SwipeSquad 2019</span>
+      <span>Civitas 2019</span>
     </footer>
   );
 }

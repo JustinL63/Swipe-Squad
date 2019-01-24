@@ -52,7 +52,7 @@ class Discover extends Component {
   render() {
     return (
       <div>
-        <h1 className="text-center">Find your match!</h1>
+        <h1 className="text-center">Find your match, with help from !</h1>
         <h3 className="text-center">
           Thumbs up on anyone you'd like to meet!
         </h3>
