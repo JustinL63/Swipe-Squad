@@ -10,7 +10,7 @@ class Discover extends Component {
     matchCount: 0
   };
 
-  // When the component mounts, load the next dog to be displayed
+  // When the component mounts, load the next match to be displayed
   componentDidMount() {
     // this.loadNextUser();
   }
