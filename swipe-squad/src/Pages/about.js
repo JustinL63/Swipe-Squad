@@ -12,7 +12,7 @@ class Discover extends Component {
 
   // When the component mounts, load the next dog to be displayed
   componentDidMount() {
-    this.loadNextUser();
+    // this.loadNextUser();
   }
 
   handleBtnClick = event => {
@@ -31,7 +31,7 @@ class Discover extends Component {
         ? newState.matchCount + 1
         : newState.matchCount;
     } else {
-      // If we thumbs down'ed the dog, we haven't matched with it
+      // If we thumbs down'ed the match, we haven't matched with it
       newState.match = false;
     }
     // Replace our component's state with newState, load the next dog image
@@ -52,7 +52,7 @@ class Discover extends Component {
   render() {
     return (
       <div>
-        <h1 className="text-center">Find your match, with help from !</h1>
+        <h1 className="text-center">Find your match, with help from the community!</h1>
         <h3 className="text-center">
           Thumbs up on anyone you'd like to meet!
         </h3>
