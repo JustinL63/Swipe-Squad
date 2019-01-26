@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Burger from "./components/Burger";
+import {NavLink} from "react-router-dom";
 
 const styles = {
   fontFamily: "sans-serif",
@@ -21,34 +22,51 @@ const contentStyle = {
   border: "none"
 };
 
-const Menu = () => (
-  <div style={styles}>
-    <Popup
-      modal
-      overlayStyle={{ background: "rgba(255,255,255,0.98" }}
-      contentStyle={contentStyle}
-      closeOnDocumentClick={false}
-      trigger={open => <Burger open={open} />}
-    >
-      {close => <Menu close={close} />}
-    </Popup>
+const Menu = ({close}) => (
+  <div className="menu">
+    <ul>
+      <li>
+        <NavLink onClick={close} activeClassName='current' to='home'>
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink onClick={close} activeClassName='current' to='about'>
+          About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink onClick={close} activeClassName='current' to='chat'>
+          Chat
+        </NavLink>
+      </li>
+    </ul>
   </div>
 );
 
 function App() {
   return (
     <Router>
-      <div>
-<NavBar />
+      <div style={styles}>
+        <Popup
+          modal
+          overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+          contentStyle={contentStyle}
+          closeOnDocumentClick={false}
+          trigger={open => <Burger open={open} />}
+        >
+          {close => <Menu close={close} />}
+        </Popup>
 
         <Wrapper>
-          <Route exact path="/" component={About} />
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/chat" component={Chat} />
         </Wrapper>
         <Footer />
         </div>
     </Router>
+
   );
 }
 
