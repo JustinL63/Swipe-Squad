@@ -20,7 +20,7 @@ code {
   cursor: pointer;
   position: fixed;
   right: 20px;
-  bottom: 40px;
+  top: 40px;
   z-index: 9999;
   background: #fff;
   padding: 10px;
