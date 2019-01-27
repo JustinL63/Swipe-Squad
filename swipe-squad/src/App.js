@@ -23,7 +23,9 @@ const contentStyle = {
 };
 
 const Menu = ({close}) => (
+
   <div className="menu">
+  <NavBar />
     <ul>
       <li>
         <NavLink onClick={close} activeClassName='current' to='home'>
@@ -46,6 +48,7 @@ const Menu = ({close}) => (
 
 function App() {
   return (
+    // <NavBar />
     <Router>
       <div style={styles}>
         <Popup
@@ -60,7 +63,7 @@ function App() {
 
         <Wrapper>
           <Route exact path="/about" component={About} />
-          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
           <Route exact path="/chat" component={Chat} />
         </Wrapper>
         <Footer />
