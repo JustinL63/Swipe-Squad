@@ -9,6 +9,10 @@ const connection = mysql.createConnection({
   database : 'eulxzrhehibx9fxj'
 });
 
+connection.connect(function(err){
+  (err)? console.log(err): console.log(connection)
+})
+
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -58,7 +62,7 @@ export default class Login extends Component {
             block
             bsSize="large"
             onChange={this.handleChange}
-            // disabled={!this.validateForm()}
+            disabled={!this.validateForm()}
             type="submit"
           >
             Login
