@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import API from "../utils/API";
-import Card from "../components/Card";
+import Profile from "../components/Profile";
 // import Alert from "../components/Alert";
 
 class Discover extends Component {
@@ -56,7 +56,7 @@ class Discover extends Component {
         <h3 className="text-center">
           Thumbs up on anyone you'd like to meet!
         </h3>
-        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+        <Profile image={this.state.image} handleBtnClick={this.handleBtnClick} />
         <h1 className="text-center">
           You've matched with {this.state.matchCount} people so far!
         </h1>
