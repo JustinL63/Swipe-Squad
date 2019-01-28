@@ -7,10 +7,10 @@ const axios = require("axios");
 const mysql = require ("mysql")
 // import "./Login.css";
 const connection = mysql.createConnection({
-  host     : 'd6vscs19jtah8iwb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-  user     : 'ltlcsxmg1zv8g265',
-  password : 'a6wzvqyxjh28sz6d',
-  database : 'eulxzrhehibx9fxj'
+  host     : "axxb6a0z2kydkco3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  user     : 'j4lrk3z16kqfyyn2',
+  password : 'e00m1gzuqamy4d1a',
+  database : 'skdxdpj8cpvcoe26'
 });
 
 connection.connect(function(err){
