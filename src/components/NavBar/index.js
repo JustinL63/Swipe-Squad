@@ -11,7 +11,7 @@ const navStyle = {
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
-    <nav style= {{navStyle}}className="navbar navbar-expand-lg navbar-light bg-light" backgroundImage="./public/logo.jpg">
+    <nav style= {{navStyle}}className="navbar navbar-expand-lg navbar-light bg-light" backgroundimage="./public/logo.jpg">
       {/* <Link className="navbar-brand" to="/">
         Civitas
       </Link> */}

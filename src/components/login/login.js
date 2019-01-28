@@ -17,6 +17,14 @@ export default class Login extends Component {
     return this.state.email.length > 0 && this.state.password.length > 0;
   }
 
+  // submitData(props) {
+  //   render() {
+  //     return(
+        
+  //     )
+  //   }
+  // }
+
   handleChange = event => {
     this.setState({
       [event.target.id]: event.target.value

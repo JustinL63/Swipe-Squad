@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Chat from "./Pages/chat";
+// import Chat from "./Pages/chat";
 import About from "./Pages/about";
 import Home from "./Pages/home";
 import Popup from "reactjs-popup";
@@ -64,7 +64,7 @@ function App() {
         <Wrapper>
           <Route exact path="/about" component={About} />
           <Route exact path="/home" component={Home} />
-          <Route exact path="/chat" component={Chat} />
+          {/* <Route exact path="/chat" component={Chat} /> */}
         </Wrapper>
         <Footer />
         </div>
