@@ -1,17 +1,7 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-const mysql = require ("mysql")
-// import "./Login.css";
-const connection = mysql.createConnection({
-  host     : 'd6vscs19jtah8iwb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-  user     : 'ltlcsxmg1zv8g265',
-  password : 'a6wzvqyxjh28sz6d',
-  database : 'eulxzrhehibx9fxj'
-});
 
-connection.connect(function(err){
-  (err)? console.log(err): console.log(connection)
-})
+
 
 export default class Login extends Component {
   constructor(props) {
@@ -58,7 +48,7 @@ export default class Login extends Component {
               type="password"
             />
           </FormGroup>
-          <Button
+          <Button onClick= {console.log(this.state.email)}
             block
             bsSize="large"
             onChange={this.handleChange}
@@ -69,6 +59,6 @@ export default class Login extends Component {
           </Button>
         </form>
       </div>
-    );
+    );  
   }
 }
