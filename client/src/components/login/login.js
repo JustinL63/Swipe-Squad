@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+<<<<<<< HEAD:client/src/components/login/login.js
+=======
+
+
+>>>>>>> master:client/src/components/login/login.js
 
 export default class Login extends Component {
   constructor(props) {
@@ -18,7 +23,11 @@ export default class Login extends Component {
   // submitData(props) {
   //   render() {
   //     return(
+<<<<<<< HEAD:client/src/components/login/login.js
 
+=======
+        
+>>>>>>> master:client/src/components/login/login.js
   //     )
   //   }
   // }
@@ -54,8 +63,12 @@ export default class Login extends Component {
               type="password"
             />
           </FormGroup>
+<<<<<<< HEAD:client/src/components/login/login.js
           <Button
             onClick={console.log(this.state.email)}
+=======
+          <Button onClick= {console.log(this.state.email)}
+>>>>>>> master:client/src/components/login/login.js
             block
             bsSize="large"
             onChange={this.handleChange}
@@ -66,6 +79,6 @@ export default class Login extends Component {
           </Button>
         </form>
       </div>
-    );
+    );  
   }
 }
