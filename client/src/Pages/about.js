@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Profile from "../components/Profile";
 // import Alert from "../components/Alert";
 
-class Discover extends Component {
+class About extends Component {
   state = {
     image: "",
     match: false,
@@ -68,4 +68,4 @@ class Discover extends Component {
   }
 }
 
-export default Discover;
+export default About;
