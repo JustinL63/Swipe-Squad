@@ -1,13 +1,5 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-const mysql = require ("mysql");
-// import "./Login.css";
-const connection = mysql.createConnection({
-  host     : 'd6vscs19jtah8iwb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-  user     : 'ltlcsxmg1zv8g265',
-  password : 'a6wzvqyxjh28sz6d',
-  database : 'eulxzrhehibx9fxj'
-});
 
 export default class Login extends Component {
   constructor(props) {
@@ -23,15 +15,23 @@ export default class Login extends Component {
     return this.state.email.length > 0 && this.state.password.length > 0;
   }
 
+  // submitData(props) {
+  //   render() {
+  //     return(
+
+  //     )
+  //   }
+  // }
+
   handleChange = event => {
     this.setState({
       [event.target.id]: event.target.value
     });
-  }
+  };
 
   handleSubmit = event => {
     event.preventDefault();
-  }
+  };
 
   render() {
     return (
@@ -55,10 +55,11 @@ export default class Login extends Component {
             />
           </FormGroup>
           <Button
+            onClick={console.log(this.state.email)}
             block
             bsSize="large"
             onChange={this.handleChange}
-            // disabled={!this.validateForm()}
+            disabled={!this.validateForm()}
             type="submit"
           >
             Login
