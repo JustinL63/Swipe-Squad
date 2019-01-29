@@ -13,7 +13,6 @@ code {
     monospace;
 }
 
-
 .burger-menu,
 .burger-menu.open {
   display: inline-block;
@@ -74,4 +73,9 @@ code {
 }
 .menu li:hover {
   color: #ff0000;
+}
+
+/*NavBar*/
+.navbar {
+  height: 6rem;
 }
