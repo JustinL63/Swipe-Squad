@@ -12,6 +12,7 @@ import Burger from "./components/Burger";
 import {NavLink} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SignUp from "./Pages/signup";
+import Create from "./components/Create"
 
 const styles = {
   fontFamily: "sans-serif",
@@ -74,6 +75,7 @@ function App() {
           <Route exact path="/home" component={Home} />
           <Route exact path="/chat" component={Chat} />
           <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/create" component={Create} />
           <Route exact path="/test" component={Test} />
         </Wrapper>
         <Footer />

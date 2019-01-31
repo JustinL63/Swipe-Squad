@@ -1,4 +1,4 @@
-.Create {
+.create {
   background-size: cover;
   background-position: center;
   background-clip: content-box;
@@ -10,7 +10,7 @@
   margin-top: 30px;
 }
 
-.Create .fa-spinner {
+.create .fa-spinner {
   font-size: 180px;
   position: absolute;
   left: 25%;
