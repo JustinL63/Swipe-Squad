@@ -63,7 +63,7 @@ export default class Login extends Component {
           <Button onClick= {this.handleSubmit}
 
           
-            onClick={console.log(this.state.email)}
+          
 
             block
             bsSize="large"

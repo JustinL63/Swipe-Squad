@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Validation from "react-validation";
+// import Validation from "react-validation";
 // import "../validation.js";
 import { FormGroup, Label, Input, FormText } from "reactstrap";
 // import "./style.css"
@@ -63,6 +63,9 @@ export default class Signup extends Component {
             <Label>Name</Label>
             <Input />
           </FormGroup>
+
+
+        
           <FormGroup>
             <Label>Email</Label>
             <ValidationInput
@@ -101,3 +104,4 @@ export default class Signup extends Component {
     );
   }
 }
+
