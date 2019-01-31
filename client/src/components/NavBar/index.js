@@ -25,6 +25,7 @@ function Navbar() {
   return (
     <nav style={navStyle} className="navbar navbar-expand-lg navbar-light"  >
   <img class="logo" src={Logo} style={logoStyle}/>
+  <span></span>
     </nav>
   );
 }
