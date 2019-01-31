@@ -11,6 +11,7 @@ import Wrapper from "./components/Wrapper";
 import Burger from "./components/Burger";
 import {NavLink} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SignUp from "./components/SignUp";
 
 const styles = {
   fontFamily: "sans-serif",
@@ -43,6 +44,11 @@ const Menu = ({close}) => (
           Chat
         </NavLink>
       </li>
+      <li>
+        <NavLink onClick={close} activeClassName='current' to='signup'>
+          Sign up
+        </NavLink>
+      </li>
     </ul>
   </div>
 );
@@ -67,6 +73,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/chat" component={Chat} />
+          <Route exact path="/signup" component={SignUp} />
           <Route exact path="/test" component={Test} />
         </Wrapper>
         <Footer />

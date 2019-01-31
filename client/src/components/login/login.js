@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import "./style.css";
 
 export default class Login extends Component {
   constructor(props) {
@@ -53,17 +54,17 @@ export default class Login extends Component {
               type="password"
             />
           </FormGroup>
-          <Button onClick= {console.log(this.state.email)}
+          <Button
+            onClick={console.log(this.state.email)}
             block
             bsSize="large"
             onChange={this.handleChange}
             disabled={!this.validateForm()}
             type="submit"
-          >
-            Login
+          >Login
           </Button>
         </form>
       </div>
-    );  
+    );
   }
 }

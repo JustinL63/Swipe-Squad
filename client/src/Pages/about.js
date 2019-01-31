@@ -51,7 +51,7 @@ class About extends Component {
 
   render() {
     return (
-      <div>
+      <div className="about">
         <h1 className="text-center">Find your match, with help from the community!</h1>
         <h3 className="text-center">
           Thumbs up on anyone you'd like to meet!
