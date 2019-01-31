@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input, FormText, FormFeedback } from 'reactstrap';
 import "./style.css"
-import NavBar from "../NavBar"
+
 
 export default class SignUp extends React.Component {
 
