@@ -78,4 +78,8 @@ code {
 /*NavBar*/
 .navbar {
   height: 6rem;
+  background-color: lightpink;
+}
+.logo {
+  height: 6rem;
 }
