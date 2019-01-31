@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+
 import axios from "axios"
+
+import "./style.css";
+
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -55,17 +59,21 @@ export default class Login extends Component {
               type="password"
             />
           </FormGroup>
+
           <Button onClick= {this.handleSubmit}
+
+          <Button
+            onClick={console.log(this.state.email)}
+
             block
             bsSize="large"
             onChange={this.handleChange}
             disabled={!this.validateForm()}
             type="submit"
-          >
-            Login
+          >Login
           </Button>
         </form>
       </div>
-    );  
+    );
   }
 }

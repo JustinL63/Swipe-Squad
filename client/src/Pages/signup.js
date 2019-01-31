@@ -1,7 +1,12 @@
-
 import React, {Component} from 'react';
 import Validation from 'react-validation';
 import "../validation.js";
+import { Button, Form, FormGroup, Label, Input, FormText, FormFeedback } from 'reactstrap';
+import "./style.css"
+
+const signUpStyle = {
+    marginTop: '5rem',
+};
 
 export default class Registration extends Component {
     constructor(props) {
@@ -46,17 +51,37 @@ export default class Registration extends Component {
 
     render() {
         return (
-            <div className="container register-form">
+            <div style={signUpStyle} className="container register-form" className="create">
+
                 <Validation.components.Form onSubmit={this.handleSubmit} method="POST">
-                    <label>Name</label>
+        <FormGroup>
+          <Label>Name</Label>
+                <Input />
+        </FormGroup>
+        <FormGroup>
+                 <Label>Email</Label>
                     <Validation.components.Input onChange={this.logChange} className="form-control" value='' placeholder='John' name='name' validations={['required']}/>
-                    <label>Email</label>
+                    <Input />
+                    <FormText>user@email.com</FormText>
+        </FormGroup>
+        <FormGroup>
                     <Validation.components.Input onChange={this.logChange} className="form-control" value='' placeholder='email@email.com' name='email' validations={['required', 'email']}/>
-                    <div className="submit-section">
+                    <div className="submit-section"/>
+        </FormGroup >
+        <FormGroup>
+                    <Label for="examplePassword">Password</Label>
+                    <Input
+                        type="password"
+                        name="password"
+                        id="examplePassword"
+                        placeholder="password placeholder"
+                    />
+                    <Input />
+        </FormGroup>            
                         <Validation.components.Button className="btn btn-uth-submit">Submit</Validation.components.Button>
-                    </div>
+                    
                 </Validation.components.Form>
-            </div>
+                </div>
         );
     }
 }
