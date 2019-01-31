@@ -11,7 +11,7 @@ import Wrapper from "./components/Wrapper";
 import Burger from "./components/Burger";
 import {NavLink} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SignUp from "./components/SignUp";
+import SignUp from "./Pages/signup";
 
 const styles = {
   fontFamily: "sans-serif",
