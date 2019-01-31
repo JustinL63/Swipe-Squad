@@ -2,3 +2,16 @@ nav.navbar.navbar-default {
   margin-bottom: 0;
   height: 9rem;
 }
+
+.navbar span {
+  position: absolute;
+  height: 1rem;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  padding: 3px;
+  background: rgb(252, 181, 214);
+}
+
+
+

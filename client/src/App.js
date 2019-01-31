@@ -61,7 +61,7 @@ function App() {
      <NavBar />
         <Popup
           modal
-          overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+          overlayStyle={{ background: "rgba(252, 181, 214)", width:"20%", float:"right", left: "none"}}
           contentStyle={contentStyle}
           closeOnDocumentClick={false}
           trigger={open => <Burger open={open} />}
