@@ -9,7 +9,8 @@ import Logo from "../NavBar/logo.jpg"
 
 const navStyle = {
   textAlign: "center",
-  position: "relative"
+  position: "relative",
+  backgroundColor: "lightpink"
 }
 
 const logoStyle = {
@@ -21,7 +22,7 @@ const logoStyle = {
 function Navbar() {
   return (
     <nav style= {{navStyle}}className="navbar navbar-expand-lg navbar-light bg-light"  >
-  <img src={Logo} style={{logoStyle}}/>
+  <img class="logo" src={Logo} style={{logoStyle}}/>
     </nav>
   );
 }
