@@ -10,7 +10,7 @@ import Logo from "../NavBar/croppedlogo.jpg"
 const navStyle = {
   textAlign: "center",
   position: "relative",
-  
+  marginBottom: "60px",
   backgroundColor: "lightgrey"
 }
 

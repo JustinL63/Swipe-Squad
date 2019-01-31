@@ -4,6 +4,9 @@ import Chat from "./Pages/chat";
 import Test from "./Pages/test";
 import About from "./Pages/about";
 import Home from "./Pages/home";
+import SignUp from "./Pages/signup";
+import Create from "./components/Create";
+import Login from "./Pages/login"
 import Popup from "reactjs-popup";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -11,8 +14,7 @@ import Wrapper from "./components/Wrapper";
 import Burger from "./components/Burger";
 import {NavLink} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SignUp from "./Pages/signup";
-import Create from "./components/Create"
+
 
 const styles = {
   fontFamily: "sans-serif",
@@ -50,6 +52,11 @@ const Menu = ({close}) => (
           Sign up
         </NavLink>
       </li>
+      <li>
+        <NavLink onClick={close} activeClassName='current' to='login'>
+          Log In
+        </NavLink>
+      </li>
     </ul>
   </div>
 );
@@ -76,6 +83,7 @@ function App() {
           <Route exact path="/chat" component={Chat} />
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/create" component={Create} />
+          <Route exact path="/login" component={Login} />
           <Route exact path="/test" component={Test} />
         </Wrapper>
         <Footer />
