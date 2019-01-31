@@ -1,16 +1,16 @@
-import React from "react";
-import SignUp from "../components/SignUp"
+// import React from "react";
+// // import SignUp from "../components/SignUp"
 
 
-function Test () {
-  return(
+// function Test () {
+//   return(
     
 
-<SignUp />
+// <SignUp />
 
       
 
-  )
-}
+//   )
+// }
 
-export default Test;
+// export default Test;

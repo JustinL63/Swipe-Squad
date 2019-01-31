@@ -62,7 +62,7 @@ export default class Login extends Component {
 
           <Button onClick= {this.handleSubmit}
 
-          <Button
+          
             onClick={console.log(this.state.email)}
 
             block
