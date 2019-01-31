@@ -1250,6 +1250,11 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
 
+latches@^1.0.2:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/latches/-/latches-1.0.9.tgz#fb6d1faa01945d86228d7735611170e662a294ed"
+  integrity sha1-+20fqgGUXYYijXc1YRFw5mKilO0=
+
 latest-version@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/latest-version/-/latest-version-3.1.0.tgz#a205383fea322b33b5ae3b18abee0dc2f356ee15"
@@ -2458,6 +2463,13 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+validation.js@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/validation.js/-/validation.js-1.0.3.tgz#d534e10fa854e243c6c3beec30278f809f6caff1"
+  integrity sha1-1TThD6hU4kPGw77sMCePgJ9sr/E=
+  dependencies:
+    latches "^1.0.2"
 
 vary@~1.1.2:
   version "1.1.2"
