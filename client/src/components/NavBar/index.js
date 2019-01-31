@@ -24,7 +24,7 @@ const logoStyle = {
 function Navbar() {
   return (
     <nav style={navStyle} className="navbar navbar-expand-lg navbar-light"  >
-  <img class="logo" src={Logo} style={logoStyle}/>
+  <img class="logo" alt = "" src={Logo} style={logoStyle}/>
   <span></span>
     </nav>
   );
