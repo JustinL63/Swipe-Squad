@@ -1,16 +1,28 @@
-import React from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import React from "react";
+import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+
+
+
 export default class Example extends React.Component {
   render() {
     return (
+      <div className="create">
       <Form>
         <FormGroup>
-          <Label for="exampleEmail">name</Label>
-          <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+          <Label for="exampleName">name</Label>
+          <Input
+            type="text"
+            name="name"
+            id="exampleName"
+            placeholder="with a placeholder"
+          />
         </FormGroup>
         <FormGroup>
-          <Label for="examplePassword">Password</Label>
-          <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+          <Label for="exampleImage">Photo</Label>
+          <Input type="file" name="image" id="exampleImage" />
+          <FormText color="muted">
+            Select a photo and put your best face forward!
+          </FormText>
         </FormGroup>
         <FormGroup>
           <Label for="exampleSelect">I am:</Label>
@@ -21,8 +33,8 @@ export default class Example extends React.Component {
           </Input>
         </FormGroup>
         <FormGroup>
-          <Label for="exampleSelectMulti">I'm looking for:</Label>
-          <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
+          <Label for="exampleSelect">I'm looking for:</Label>
+          <Input type="select" name="select" id="exampleSelect">
             <option>A serious relationship</option>
             <option>Something casual</option>
             <option>Just friends</option>
@@ -34,11 +46,9 @@ export default class Example extends React.Component {
         </FormGroup>
         <Button>Submit</Button>
       </Form>
+      </div>
     );
+  
   }
+ 
 }
-
-
-
-
-export default Create;
