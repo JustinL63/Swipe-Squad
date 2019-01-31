@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+
+import axios from "axios"
+
 import "./style.css";
 
 export default class Login extends Component {
@@ -31,6 +34,8 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    console.log(this.state)
+    axios.post("http://localhost:3001/api",this.state).then(response => console.log(response))
   };
 
   render() {
@@ -54,8 +59,12 @@ export default class Login extends Component {
               type="password"
             />
           </FormGroup>
+
+          <Button onClick= {this.handleSubmit}
+
           <Button
             onClick={console.log(this.state.email)}
+
             block
             bsSize="large"
             onChange={this.handleChange}
